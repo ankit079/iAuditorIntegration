@@ -1,0 +1,2488 @@
+{
+    "audit_data": {
+        "score": 0, 
+        "date_completed": 1518697424, 
+        "name": "Ankit Shah", 
+        "date_modified": 1518697424, 
+        "duration": 0, 
+        "authorship": {
+            "owner": "Ankit Shah", 
+            "device_id": "8a582619-95e9-43e8-b671-5f316745b254", 
+            "author": "Ankit Shah"
+        }, 
+        "date_started": 1518495896, 
+        "total_score": 23
+    }, 
+    "item": [
+        {
+            "combined_score": 0.0, 
+            "parent_id": null, 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "total_score": 0, 
+            "label": "WORM Site Audit Sheet", 
+            "type": "section", 
+            "combined_total_score": 36.0, 
+            "options": null
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "total_score": 0, 
+            "label": "Site Information", 
+            "type": "category", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "f3265c45-a89d-4703-88fc-1e01fdac89d4", 
+            "total_score": 0, 
+            "label": "Site Functional Location", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {
+                "is_mandatory": false
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "01638c1e-68e4-4bc2-a9df-ecbd472e49a6", 
+            "total_score": 0, 
+            "label": "Site Audit Number", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {
+                "is_mandatory": false
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "714c43f2-8ebb-4404-88c1-0be9f9ec8b19", 
+            "total_score": 0, 
+            "label": "Date of Audit/Inspection", 
+            "type": "datetime", 
+            "combined_total_score": 0, 
+            "options": {
+                "enable_time": true, 
+                "weighting": 1, 
+                "is_mandatory": false, 
+                "enable_date": true
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "2a101486-c952-47b8-b942-49693c60fa4e", 
+            "total_score": 0, 
+            "label": "Site Description", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {
+                "is_mandatory": false
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {
+                "location": {
+                    "geometry": {
+                        "type": "Point", 
+                        "coordinates": []
+                    }
+                }
+            }, 
+            "item_id": "354c6f87-4130-4df9-8daa-ff4da1666034", 
+            "total_score": 0, 
+            "label": "Address", 
+            "type": "address", 
+            "combined_total_score": 0, 
+            "options": {
+                "is_mandatory": false
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "62d92508-4e92-4da1-8dfb-41a0e890995c", 
+            "total_score": 0, 
+            "label": "Age of Site", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "77efd426-48ad-48f9-bf09-4885f0ccd0f1", 
+            "total_score": 0, 
+            "label": "Age of Switchboard", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a9e7e8f9-59b0-4600-9a42-de6155881637", 
+            "total_score": 0, 
+            "label": "ClearSCADA Site Location", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1e08f258-497b-490b-8444-00b76335002e", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3", 
+            "total_score": 0, 
+            "label": "AutoSave Site Name", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a", 
+            "total_score": 0, 
+            "label": "General", 
+            "type": "category", 
+            "combined_total_score": 1.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "06f376a8-6f2b-43ba-9751-e665ae9cb4d4", 
+            "total_score": 1.0, 
+            "label": "Power to the site", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "multiple_selection": 0, 
+                "failed_responses": [], 
+                "response_set": "5a9dcdbf-ffcb-4213-bc41-0f5554d2ab65", 
+                "weighting": 0
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "662e1d17-d1b6-41c4-9d57-87d2691ca735", 
+            "total_score": 0, 
+            "label": "Details (if applicable)", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "e2670aaa-a778-4117-bf17-3fdf89ef515d", 
+            "total_score": 1.0, 
+            "label": "Is cubicle located in an outdoor environment?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e2670aaa-a778-4117-bf17-3fdf89ef515d", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "40b54306-21e2-45d9-b6c9-d0c38f5c9fbe", 
+            "total_score": 0, 
+            "label": "Details (if applicable)", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6704f476-9e2b-4151-9264-f3c954c39285", 
+            "total_score": 0, 
+            "label": "Photo of cubicle", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "85637e54-44ab-4f6c-b704-f434fc0586f0", 
+            "total_score": 1.0, 
+            "label": "is there any graffiti/vandalism damage to property?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "85637e54-44ab-4f6c-b704-f434fc0586f0", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "109ef0d2-3265-4cce-883a-451a9924bada", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "109ef0d2-3265-4cce-883a-451a9924bada", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "84a58a44-3622-4230-81eb-16a79823ce34", 
+            "total_score": 0, 
+            "label": "Details (if applicable)", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "109ef0d2-3265-4cce-883a-451a9924bada", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "963169ee-38f3-468b-b015-0c050024e9c0", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "5ac2bf0b-4a1b-4bb1-b53a-43b71ad3ff7c", 
+            "total_score": 1.0, 
+            "label": "Are cubicle keys correct?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "1f59f9f1-dff8-43de-9d21-9213061f8bc7", 
+            "total_score": 0, 
+            "label": "Duty Selector Switches", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "b0881279-7494-4107-9b0e-10fe07367f24", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "32dfa594-8f0a-4205-9872-35ddcc435fdb", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "7d4e0eb5-6558-42bd-b9d2-4be3baaaa241", 
+            "total_score": 0, 
+            "label": "Control Selector Switches", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5f9097b3-c4af-4bc4-be7b-16cdc2cd5260", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "62d76c1e-cc54-465a-9a17-fabcdb58e310", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "2e3ea9c2-1888-4ca9-8118-048b82898b83", 
+            "total_score": 0, 
+            "label": "Fencing, Lighting", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d256f630-cc05-4344-bd67-0242cc17baf3", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "b8cb7344-923d-4f75-be36-060470ba6bf9", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5bfafdbe-5709-484d-b38d-a884d7258ce5", 
+            "total_score": 0, 
+            "label": "Building/Cabinet", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "4940ffdc-210b-4ce3-93eb-382d6d71c8c6", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5169d0ab-6b67-4224-90f6-3cc86fd7d401", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "0fbb0241-a07e-4a43-bfd3-99378386522b", 
+            "total_score": 1.0, 
+            "label": "Any new panels/cabinet?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "0fbb0241-a07e-4a43-bfd3-99378386522b", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "73d65535-38a0-4ead-8786-9ceb0afd6cf0", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "73d65535-38a0-4ead-8786-9ceb0afd6cf0", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "91a97701-980b-470c-8339-e34e7b4ee978", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "73d65535-38a0-4ead-8786-9ceb0afd6cf0", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "0fbfb256-d61e-47e9-97aa-a1e11d98f21c", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "ba52387d-d8e8-446c-8519-39f1276356be", 
+            "total_score": 1.0, 
+            "label": "Any Zelemite present in existing panel?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "ba52387d-d8e8-446c-8519-39f1276356be", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "4c97648c-8ffc-4aed-81f8-f206ad3bee6d", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "56721193-15f8-4ccb-8829-7ad29c948c7e", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "89b932e6-fe46-401c-987f-720e9b05100e", 
+            "total_score": 0, 
+            "label": "Communication", 
+            "type": "category", 
+            "combined_total_score": 1.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "89b932e6-fe46-401c-987f-720e9b05100e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "cde7e24b-9ad1-4495-8382-90ecf6d5541b", 
+            "total_score": 1.0, 
+            "label": "Comms Type", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "d22b929f-ee3e-4c34-8f71-076c098e4098"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "42436909-7b30-4358-a7d7-f89fc231c026", 
+            "total_score": 1.0, 
+            "label": "Any existing Mast?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "42436909-7b30-4358-a7d7-f89fc231c026", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "8f6f712b-4e09-4272-aedd-f822004b83c9", 
+            "total_score": 0, 
+            "label": "Mast Height", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "64fe3b3b-528f-4860-a6ad-268f6e91849d", 
+            "total_score": 0, 
+            "label": "Mast Location", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "b0a0f4b2-020f-4e2f-b65e-97088c1e8fe2", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "496d9d92-196b-406b-af67-44873ddfce31", 
+            "total_score": 1.0, 
+            "label": "Any radio path barriers?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "496d9d92-196b-406b-af67-44873ddfce31", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "4341fb40-2037-45bd-8f49-ab0989deec60", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4341fb40-2037-45bd-8f49-ab0989deec60", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "70062bce-a689-4970-aee4-d12844903cb0", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4341fb40-2037-45bd-8f49-ab0989deec60", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "0c7645c8-4df8-4fd5-8091-e56d54eb9db8", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "867a8884-43ff-4e0f-9110-06cf9ab72f11", 
+            "total_score": 1.0, 
+            "label": "Is existing conduit and cable path to any existing mast OK?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "867a8884-43ff-4e0f-9110-06cf9ab72f11", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "651390df-0ffb-49fb-b828-8c4f7e948862", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "651390df-0ffb-49fb-b828-8c4f7e948862", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6cd3ca38-07b2-48dd-9e65-e67461e55273", 
+            "total_score": 0, 
+            "label": "Comments", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "651390df-0ffb-49fb-b828-8c4f7e948862", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d90d3419-898e-4215-af29-aea991ad77f6", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "147dd973-d55f-4c12-9412-815ffc206355", 
+            "total_score": 1.0, 
+            "label": "Is conduit path to any new mast OK?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "147dd973-d55f-4c12-9412-815ffc206355", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "58f5b92d-21ac-4f99-a754-2e3854f20f9b", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "58f5b92d-21ac-4f99-a754-2e3854f20f9b", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "636c41e2-d8f7-4ec6-88c3-0cd642bc51c1", 
+            "total_score": 0, 
+            "label": "Comments", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "58f5b92d-21ac-4f99-a754-2e3854f20f9b", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "9fbe5194-41b3-4492-8baa-1bd98a5fa884", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "13fe3f4a-4f1d-43be-aa9b-152516ddf798", 
+            "total_score": 1.0, 
+            "label": "Location for new mast", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "13fe3f4a-4f1d-43be-aa9b-152516ddf798", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d4e04818-4b10-49cc-8650-d136b3d4e806", 
+            "total_score": 0, 
+            "label": "Comments", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "836d1508-783d-4d6d-872c-8647814b6b6b", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "49c9a343-aff4-4244-965d-9eda4d519608", 
+            "total_score": 0, 
+            "label": "Drawings", 
+            "type": "category", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "6d64683f-83da-4ea7-a9a1-8409e44cadae", 
+            "total_score": 1.0, 
+            "label": "As-constructed drawings/markups", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "6d64683f-83da-4ea7-a9a1-8409e44cadae", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a93580dd-98ca-404a-9c6b-4da930acc3d7", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a93580dd-98ca-404a-9c6b-4da930acc3d7", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "c8035bc7-2b46-47ca-bf00-a5bd4116ea5c", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a93580dd-98ca-404a-9c6b-4da930acc3d7", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a8731236-6ed5-4376-9afd-cade2f5faa94", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e", 
+            "total_score": 0, 
+            "label": "RTUs and PLCs", 
+            "type": "category", 
+            "combined_total_score": 5.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "29d82e5a-3b56-48b2-ac66-e624b30bde26", 
+            "total_score": 1.0, 
+            "label": "Existing Ademco", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "29d82e5a-3b56-48b2-ac66-e624b30bde26", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6ec948c5-fbda-47f8-aaed-a6042a9cd874", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "6ec948c5-fbda-47f8-aaed-a6042a9cd874", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "674972ea-ca9b-4bae-ad31-561ddf841088", 
+            "total_score": 0, 
+            "label": "Phone Number", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "6ec948c5-fbda-47f8-aaed-a6042a9cd874", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a5f177f9-8b53-4360-a527-63c785702a2b", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "6359ad3f-1869-47e6-9e66-c43b6e9b9cfc", 
+            "total_score": 1.0, 
+            "label": "Existing RTU", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "6359ad3f-1869-47e6-9e66-c43b6e9b9cfc", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "2d97ed6b-b414-44c1-b0d5-f7a6ef1f8222", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "2d97ed6b-b414-44c1-b0d5-f7a6ef1f8222", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "f2319c61-d16d-4365-af5f-85d7e83f77b6", 
+            "total_score": 0, 
+            "label": "Make & Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "2d97ed6b-b414-44c1-b0d5-f7a6ef1f8222", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5599845b-ee44-48c1-a58d-9b8575e85144", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "89fd2a8a-6ec9-49f1-ad5c-ff0143740b71", 
+            "total_score": 1.0, 
+            "label": "Existing PLC", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "89fd2a8a-6ec9-49f1-ad5c-ff0143740b71", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "1d72a3c9-1664-46eb-af91-5482ed90f712", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1d72a3c9-1664-46eb-af91-5482ed90f712", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "e5736640-f634-4120-a215-554f2e967113", 
+            "total_score": 0, 
+            "label": "Make & Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "1d72a3c9-1664-46eb-af91-5482ed90f712", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "27a913d8-0c90-4be7-8ea9-988b72359259", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "7046c0f1-864d-49c8-ab13-a1576519efac", 
+            "total_score": 1.0, 
+            "label": "Existing PSTN Modem", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "7046c0f1-864d-49c8-ab13-a1576519efac", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5f5f8f75-2723-48c2-8d58-d6387ad97fd4", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "5f5f8f75-2723-48c2-8d58-d6387ad97fd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "96590e76-7751-40a1-b1ad-e807a5768f20", 
+            "total_score": 0, 
+            "label": "Make, Model and Phone Number", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "5f5f8f75-2723-48c2-8d58-d6387ad97fd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "0bb0223a-bae6-43ee-a27b-bf640a35baae", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "9e204028-a081-482d-8955-4091d9da65fd", 
+            "total_score": 1.0, 
+            "label": "Pump Controller (e.g. SM7, etc.)", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "9e204028-a081-482d-8955-4091d9da65fd", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a92ca3c4-93a7-4b45-a5fa-918cbe653cd6", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a92ca3c4-93a7-4b45-a5fa-918cbe653cd6", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "858281a8-0a44-4c47-a9fd-d97593fa4204", 
+            "total_score": 0, 
+            "label": "Make & Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a92ca3c4-93a7-4b45-a5fa-918cbe653cd6", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6336708f-c4f9-4790-8fdb-6a0306d09141", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "50929141-640e-4206-bdec-345b277b8165", 
+            "total_score": 0, 
+            "label": "Backup PSU", 
+            "type": "category", 
+            "combined_total_score": 1.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "50929141-640e-4206-bdec-345b277b8165", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "6bcbb40c-46c5-45dd-b67c-cd23af049155", 
+            "total_score": 1.0, 
+            "label": "Backup PSU exists", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "6bcbb40c-46c5-45dd-b67c-cd23af049155", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "4b0a446f-5eee-40d0-84ac-76efc42f777c", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4b0a446f-5eee-40d0-84ac-76efc42f777c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "bc94f614-1c33-45ea-9a02-0270155920fe", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4b0a446f-5eee-40d0-84ac-76efc42f777c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "61d579b5-0b3e-4886-83b3-660c281fce63", 
+            "total_score": 0, 
+            "label": "Voltage", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4b0a446f-5eee-40d0-84ac-76efc42f777c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "2d9ae930-1803-4e58-aaf6-5eb2a72453a8", 
+            "total_score": 0, 
+            "label": "AmpHours", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4b0a446f-5eee-40d0-84ac-76efc42f777c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "fecfbd9c-9f75-4591-a99a-41278f553076", 
+            "total_score": 0, 
+            "label": "Backup PSU Make", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "4b0a446f-5eee-40d0-84ac-76efc42f777c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "e9f1d517-f722-4663-af6e-80b56f60d5e7", 
+            "total_score": 0, 
+            "label": "Backup PSU Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d82df449-ad0f-48c7-9353-45d34a4d0771", 
+            "total_score": 0, 
+            "label": "NextG Testing", 
+            "type": "category", 
+            "combined_total_score": 2.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "d82df449-ad0f-48c7-9353-45d34a4d0771", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "abdbf133-a794-4abb-b9ef-e2fe6de3013c", 
+            "total_score": 1.0, 
+            "label": "Next G Test Performed?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "d82df449-ad0f-48c7-9353-45d34a4d0771", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "08a4a681-bd97-4908-a1ea-c16670cd279c", 
+            "total_score": 1.0, 
+            "label": "Existing Next G Modem on site?", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "08a4a681-bd97-4908-a1ea-c16670cd279c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "3304141e-345c-42c4-8f46-0fa3102d9b64", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "3304141e-345c-42c4-8f46-0fa3102d9b64", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "db3f3510-4d2b-4020-a95c-3e19aace3e36", 
+            "total_score": 0, 
+            "label": "Modem Phone Number", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "3304141e-345c-42c4-8f46-0fa3102d9b64", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "af68200c-9e88-4220-b560-9b5672a98c4e", 
+            "total_score": 0, 
+            "label": "Modem IP Address (LAN)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "3304141e-345c-42c4-8f46-0fa3102d9b64", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "19aef5d5-4dbf-4c2e-8c57-0783be4f19a7", 
+            "total_score": 0, 
+            "label": "Modem IP Address (WAN)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "dbced914-02b7-45ee-9aa7-98ea2d9f6a9e", 
+            "total_score": 0, 
+            "label": "Electrodes and Float Balls", 
+            "type": "category", 
+            "combined_total_score": 1.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "dbced914-02b7-45ee-9aa7-98ea2d9f6a9e", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "2a9cc655-7850-4497-b03b-5256fccab670", 
+            "total_score": 1.0, 
+            "label": "Existing Electrodes", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "2a9cc655-7850-4497-b03b-5256fccab670", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d993d76a-0777-4364-88c7-dc4719e3bb6c", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d993d76a-0777-4364-88c7-dc4719e3bb6c", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "9e6fcc80-65a3-4a5f-ada7-ae86b259a8e1", 
+            "total_score": 0, 
+            "label": "Details", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "b137d10b-3398-4c38-bba6-f8fc59325289", 
+            "total_score": 0, 
+            "label": "Flowmeter", 
+            "type": "category", 
+            "combined_total_score": 5.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "b137d10b-3398-4c38-bba6-f8fc59325289", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "8f067897-4669-41dd-ab43-73cdada456b9", 
+            "total_score": 1.0, 
+            "label": "Existing Flowmeter", 
+            "type": "question", 
+            "combined_total_score": 5.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "8f067897-4669-41dd-ab43-73cdada456b9", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 4.0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "033ae48b-0532-4306-89cf-afe7164737df", 
+            "total_score": 0, 
+            "label": "Flowmeter General Location", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "8d056fce-8d05-4ac6-8396-4d2b0516238d", 
+            "total_score": 1.0, 
+            "label": "Flowmeter Process Location", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "multiple_selection": 0, 
+                "failed_responses": [], 
+                "response_set": "046a436c-892c-4cb8-a480-4e0a4f72efee", 
+                "weighting": 1
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "85cd1959-64a4-49d9-bf7c-16fb5b20fc65", 
+            "total_score": 0, 
+            "label": "Flowmeter Type", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5935da11-28e1-4486-b2fd-63234fb8bae8", 
+            "total_score": 0, 
+            "label": "Flowmeter Make", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "400c7eb1-bc39-446f-9cf4-9471b20c3c61", 
+            "total_score": 0, 
+            "label": "Flowmeter Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "3c1f04e6-743c-4070-9efa-ff59868f91a0", 
+            "total_score": 1.0, 
+            "label": "Flowmeter Input Voltage", 
+            "type": "question", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "c04b1244-b09f-451d-b48e-c07014d5cf08"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "de2ee6bc-4537-4820-803b-cf666294d769", 
+            "total_score": 1.0, 
+            "label": "Flowmeter Conditon", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "d22b929f-ee3e-4c34-8f71-076c098e4098"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "433e5ad1-9071-4a79-aba7-84b65e4d0610", 
+            "total_score": 0, 
+            "label": "Flowmeter Range (mA span)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "af106d66-e6dd-445c-a80e-682a7d3d3e00", 
+            "total_score": 0, 
+            "label": "Flowmeter Range (Pulse settings)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "0e65323e-15b1-4164-a1a5-b1a5cf3fceb1", 
+            "total_score": 0, 
+            "label": "Flometer Alarm Contacts (Number of and Connected to)", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "41524e1c-b968-4714-91d4-7e9b68880e3c", 
+            "total_score": 1.0, 
+            "label": "Flowmeter Serial Data Connection", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "1de22b8e-9b2e-4dc1-8979-079b66f9fbd3"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "8ea6db12-da63-4cda-8182-7053534d11e8", 
+            "total_score": 0, 
+            "label": "Flowmeter Serial Number", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "1a43b1d9-cfdc-4160-88b5-55c906b27ea4", 
+            "total_score": 0, 
+            "label": "Flowmeter Diameter", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "93f499a0-0da0-4dbc-bb4d-def8b23cb8b3", 
+            "total_score": 0, 
+            "label": "Flowmeter Approximate Pipework Length (Before)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a53d557b-190b-4c1f-9d32-d0a44212b137", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "8231e0e6-5a53-4f3b-ac35-a098f19fd1fc", 
+            "total_score": 0, 
+            "label": "Flowmeter Approximate Pipework Length (After)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "f4ded23d-3fa4-4c1d-a320-5c3cbcc937ca", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter", 
+            "type": "category", 
+            "combined_total_score": 4.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "f4ded23d-3fa4-4c1d-a320-5c3cbcc937ca", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "ed76bbc2-186b-4961-85e6-dd2584ec7d35", 
+            "total_score": 1.0, 
+            "label": "Existing Pressure Transmitter", 
+            "type": "question", 
+            "combined_total_score": 4.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "ed76bbc2-186b-4961-85e6-dd2584ec7d35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 3.0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "f24b7ed4-da78-45f6-8e7f-0f1daf027529", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "41847257-f133-4511-a377-ed2b65118e85", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter General Location", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "c267f966-30df-48f2-9234-3bb826130662", 
+            "total_score": 1.0, 
+            "label": "Pressure Transmitter Process Location", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "multiple_selection": 1, 
+                "failed_responses": [], 
+                "response_set": "f96fa202-7233-4052-afb3-1064e5423aa4", 
+                "weighting": 1
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "f953b92d-b04f-4461-96b6-6f6e757ce0c5", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter Make", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "9a453b25-d6b7-4f17-8b2e-659a20b3bd72", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "dd29dbaf-1d8a-4abe-b028-d4b440470bcf", 
+            "total_score": 1.0, 
+            "label": "Pressure Transmitter Conditon", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "multiple_selection": 1, 
+                "failed_responses": [], 
+                "response_set": "d22b929f-ee3e-4c34-8f71-076c098e4098", 
+                "weighting": 1
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "ecc9f875-2c55-4553-ab4c-3eafc3d15889", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter Range", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "4e59317a-046d-4c7f-89db-23ba45466df0", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter Alarm Contacts (Number of and Connected to)", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "193f79d0-a536-4770-b800-574896809e31", 
+            "total_score": 1.0, 
+            "label": "Pressure Transmitter Serial connection", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "1de22b8e-9b2e-4dc1-8979-079b66f9fbd3"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "a8ef26df-e70b-4edf-8bc6-4a5e89ec2b35", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "be77ff9c-114f-4e03-96fc-cc8fc148cc9e", 
+            "total_score": 0, 
+            "label": "Pressure Transmitter Pipework Tapping Point", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "14998adc-9a95-42c6-b0f3-4c81a709f879", 
+            "total_score": 0, 
+            "label": "Level Transmitter", 
+            "type": "category", 
+            "combined_total_score": 5.0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "14998adc-9a95-42c6-b0f3-4c81a709f879", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "4aa269ba-9902-4c4e-8032-4cfe20996c12", 
+            "total_score": 1.0, 
+            "label": "Existing Level Transmitter", 
+            "type": "question", 
+            "combined_total_score": 5.0, 
+            "options": {
+                "weighting": 1, 
+                "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "4aa269ba-9902-4c4e-8032-4cfe20996c12", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "total_score": 0, 
+            "label": null, 
+            "type": "smartfield", 
+            "combined_total_score": 4.0, 
+            "options": {
+                "values": [
+                    "8bcfbf00-e11b-11e1-9b23-0800200c9a66"
+                ], 
+                "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "73b38b5d-e589-43fd-8da7-7fdf30c6db05", 
+            "total_score": 0, 
+            "label": "Photo", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "b2d7e8f9-9037-48c2-9521-e7575d4cf737", 
+            "total_score": 0, 
+            "label": "Level Transmitter General Location", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "895d9bb0-548a-4adc-bb1f-13911636f83f", 
+            "total_score": 1.0, 
+            "label": "Level Transmitter Type", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "075bd363-7288-4c87-a9fb-e32a5318ac58"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "36002d82-a306-4754-b0fd-a3720c852ccc", 
+            "total_score": 0, 
+            "label": "Level Transmitter Make", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "db29e5fb-fb04-499a-8708-ae27cdfd7146", 
+            "total_score": 0, 
+            "label": "Level Transmitter Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "d22d1a9b-183d-4b73-9e2a-3fde95f9dfeb", 
+            "total_score": 1.0, 
+            "label": "Level Transmitter Voltage", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "8a21524f-99b5-4673-b87a-9f411dbd3f9c"
+            }
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "e72100a9-f33e-484e-9c45-bbc02a85c7a4", 
+            "total_score": 1.0, 
+            "label": "Level Transmitter Condition", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "d22b929f-ee3e-4c34-8f71-076c098e4098"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "195cafe5-f1e8-4833-b4e9-79cc15af7474", 
+            "total_score": 0, 
+            "label": "Level Transmitter Range", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "009a5f0c-9729-4406-be1f-184b34b788d3", 
+            "total_score": 0, 
+            "label": "Level Transmitter Alarm Contacts (Number of and Connected to)", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0.0, 
+            "parent_id": "cdcd03a5-b624-4d94-b1d2-c84e530a1dd4", 
+            "score": 0.0, 
+            "responses": {}, 
+            "item_id": "27c73aed-4d58-451a-9f74-98ba298bbd79", 
+            "total_score": 1.0, 
+            "label": "Level Transmitter Serial connection", 
+            "type": "list", 
+            "combined_total_score": 1.0, 
+            "options": {
+                "weighting": 1, 
+                "failed_responses": [], 
+                "response_set": "1de22b8e-9b2e-4dc1-8979-079b66f9fbd3"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "total_score": 0, 
+            "label": "HELV", 
+            "type": "category", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "439a3f3b-3908-4f9a-9740-6aa9eb3048f7", 
+            "total_score": 0, 
+            "label": "Switchboard name", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6706c79b-e6fe-4328-bfd7-cdf1963673bc", 
+            "total_score": 0, 
+            "label": "Switchboard ID (eg MCC17, DB2, etc)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "a7996061-dedd-4762-9407-b108a8938d61", 
+            "total_score": 0, 
+            "label": "WP Meter number", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "8ccbbc16-c70d-4809-9f38-e5ecfd235644", 
+            "total_score": 0, 
+            "label": "Switchboard voltage", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "3e6c721e-fbd1-4d2e-9268-0f3199422fe0", 
+            "total_score": 0, 
+            "label": "Switchboard fault current rating", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "26e94310-af52-4eaf-af1d-3981cd190d6a", 
+            "total_score": 0, 
+            "label": "Switchboard build year", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5f44e5fe-9fed-4f85-b997-f839fd966f14", 
+            "total_score": 0, 
+            "label": "Switchboard manufacturer", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "74005f35-f657-45d6-a7db-c10664948790", 
+            "total_score": 0, 
+            "label": "SB Incomer Fuse Manufacturer", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "d0ef96f6-a395-4d18-8a65-18bd1037405e", 
+            "total_score": 0, 
+            "label": "SB Incomer Fuse Size", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "01fbadc0-8639-41d0-9848-360d31f4aebe", 
+            "total_score": 0, 
+            "label": "SB Incomer CB Manufacturer", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "e8c69029-5f2b-4f1d-87fc-d040373a6e62", 
+            "total_score": 0, 
+            "label": "SB Incomer CB Model", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "bd90229a-3ace-4108-8a99-583f96d354bd", 
+            "total_score": 0, 
+            "label": "SB Incomer CB Size", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6a838b29-2bde-45f3-bf37-bc86fb7a6bb3", 
+            "total_score": 0, 
+            "label": "Switchboard photo front of full switchboard", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "0c85af1d-ee84-4455-a33d-0f285e18b924", 
+            "total_score": 0, 
+            "label": "Switchboard photo  back of full switchboard", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "3d8fac5b-762f-476b-8ad7-5b98ecb7cd36", 
+            "total_score": 0, 
+            "label": "Incomer protective device settings (in particular protection settings)", 
+            "type": "media", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "5252118c-434a-499e-bd75-875c8fccfeca", 
+            "total_score": 0, 
+            "label": "Switchboard Supplied By (eg transformer, SB xxx)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "30c5d3bf-4346-4a57-9fc3-ecedf08b1db0", 
+            "total_score": 0, 
+            "label": "Supply Transformer size (kvA)", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "798dba12-b951-4b55-a614-ab60d456f83c", 
+            "total_score": 0, 
+            "label": "General Comments", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "d802c759-2f94-46f5-818b-1961b18ed458", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "56d9744e-6a55-43f5-9dab-42c44842ad75", 
+            "total_score": 0, 
+            "label": "End Time", 
+            "type": "datetime", 
+            "combined_total_score": 0, 
+            "options": {
+                "enable_time": true, 
+                "weighting": 1, 
+                "enable_date": true
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b", 
+            "total_score": 0, 
+            "label": "Summary and Signoff", 
+            "type": "category", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "266f8f3a-5541-45d4-95f4-55d7786e7a1d", 
+            "total_score": 0, 
+            "label": "Summary", 
+            "type": "text", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "6eb5a703-4d36-4145-bcba-f9f787054247", 
+            "total_score": 0, 
+            "label": "Name and signature of inspector", 
+            "type": "signature", 
+            "combined_total_score": 0, 
+            "options": {}
+        }
+    ], 
+    "audit_id": "audit_c888693a4e474a5389ec12594845c396", 
+    "template_data": {
+        "authorship": {
+            "owner": "Ankit Shah", 
+            "date_created": 1517971171, 
+            "author": "Ankit Shah", 
+            "device_id": "8a582619-95e9-43e8-b671-5f316745b254", 
+            "date_modified": 1518494397
+        }, 
+        "metadata": {
+            "industry": 13, 
+            "image": "", 
+            "description": "Asset inspection, condition assessment and audit", 
+            "name": "WORM Site Audit Sheet", 
+            "subindustry": 1
+        }
+    }, 
+    "header": [
+        {
+            "combined_score": 0, 
+            "parent_id": "", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "f3245d39-ea77-11e1-aff1-0800200c9a66", 
+            "total_score": 0, 
+            "label": "Title Page", 
+            "type": "section", 
+            "combined_total_score": 0, 
+            "options": {}
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66", 
+            "score": 0, 
+            "responses": {}, 
+            "item_id": "7c2ec5b7-1443-4874-8d83-d83316d981be", 
+            "total_score": 0, 
+            "label": "WORM Site Audit Sheet", 
+            "type": "information", 
+            "combined_total_score": 0, 
+            "options": {
+                "type": "text"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66", 
+            "score": 0, 
+            "responses": {
+                "datetime": 1518697410
+            }, 
+            "item_id": "0650497f-faad-47bd-b755-8171f23b81b0", 
+            "total_score": 0, 
+            "label": "Conducted on", 
+            "type": "datetime", 
+            "combined_total_score": 0, 
+            "options": {
+                "enable_time": "1", 
+                "weighting": 1, 
+                "enable_date": "1"
+            }
+        }, 
+        {
+            "combined_score": 0, 
+            "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66", 
+            "score": 0, 
+            "responses": {
+                "text": "Ankit Shah"
+            }, 
+            "item_id": "f3245d43-ea77-11e1-aff1-0800200c9a66", 
+            "total_score": 0, 
+            "label": "Prepared by", 
+            "type": "textsingle", 
+            "combined_total_score": 0, 
+            "options": {}
+        }
+    ], 
+    "template_id": "template_e1a05cecebfb461183a21b57d9685203"
+}

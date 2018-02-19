@@ -1,0 +1,1006 @@
+{
+  "template_id": "template_e1a05cecebfb461183a21b57d9685203",
+  "audit_id": "audit_e7b35a42aa2841ad9baf3184bd902b47",
+  "archived": false,
+  "created_at": "2018-02-09T06:47:23.845Z",
+  "modified_at": "2018-02-09T06:47:39.545Z",
+  "audit_data": {
+    "score": 0,
+    "total_score": 19,
+    "score_percentage": 0,
+    "name": "9 Feb 2018 / Ankit Shah",
+    "duration": 0,
+    "authorship": {
+      "device_id": "8a582619-95e9-43e8-b671-5f316745b254",
+      "owner": "Ankit Shah",
+      "owner_id": "user_91d1fae6891d47cc868ca092a685b970",
+      "author": "Ankit Shah",
+      "author_id": "user_91d1fae6891d47cc868ca092a685b970"
+    },
+    "date_completed": null,
+    "date_modified": "2018-02-09T06:47:38.935Z",
+    "date_started": "2018-02-09T06:47:23.845Z"
+  },
+  "template_data": {
+    "authorship": {
+      "device_id": "8a582619-95e9-43e8-b671-5f316745b254",
+      "owner": "Ankit Shah",
+      "owner_id": "user_91d1fae6891d47cc868ca092a685b970",
+      "author": "Ankit Shah",
+      "author_id": "user_91d1fae6891d47cc868ca092a685b970"
+    },
+    "metadata": {
+      "description": "Asset inspection, condition assessment and audit",
+      "name": "WORM Site Audit Sheet"
+    },
+    "response_sets": {
+      "51900889-ac15-4357-9626-be65c36c06f0": {
+        "id": "51900889-ac15-4357-9626-be65c36c06f0",
+        "type": "question",
+        "responses": [
+          {
+            "id": "92981ff6-0e24-46e8-a2cf-01dac0ae1d6a",
+            "label": "Manual",
+            "colour": "61,134,198",
+            "score": 1,
+            "short_label": "",
+            "type": "text",
+            "enable_score": true
+          },
+          {
+            "id": "107d39ae-34f0-4a92-a1ad-88f037179145",
+            "label": "Automatic",
+            "colour": "255,153,50",
+            "score": 0,
+            "short_label": "",
+            "type": "text",
+            "enable_score": true
+          }
+        ]
+      },
+      "d22b929f-ee3e-4c34-8f71-076c098e4098": {
+        "id": "d22b929f-ee3e-4c34-8f71-076c098e4098",
+        "type": "list",
+        "responses": [
+          {
+            "id": "d037d4c8-877b-4379-b742-afced494eb9a",
+            "label": "NextG",
+            "colour": "250,250,250",
+            "score": "1",
+            "short_label": "N",
+            "enable_score": false
+          },
+          {
+            "id": "722174ef-23dd-4641-97cd-e2b85a925c05",
+            "label": "PSTN",
+            "colour": "250,250,250",
+            "score": 0,
+            "short_label": "P",
+            "enable_score": false
+          },
+          {
+            "id": "6dd0ded7-3b3a-471a-8d04-676c520051fa",
+            "label": "Radio",
+            "colour": "250,250,250",
+            "score": 0,
+            "short_label": "R",
+            "enable_score": false
+          },
+          {
+            "id": "c2a4221a-8951-403d-b1f0-102915e0f7f7",
+            "label": "Other",
+            "colour": "250,250,250",
+            "score": 0,
+            "short_label": "O",
+            "enable_score": false
+          }
+        ]
+      }
+    }
+  },
+  "header_items": [
+    {
+      "item_id": "f3245d39-ea77-11e1-aff1-0800200c9a66",
+      "label": "Title Page",
+      "type": "section",
+      "children": [ "f3245d42-ea77-11e1-aff1-0800200c9a66", "f3245d43-ea77-11e1-aff1-0800200c9a66", "f3245d44-ea77-11e1-aff1-0800200c9a66" ]
+    },
+    {
+      "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66",
+      "item_id": "f3245d42-ea77-11e1-aff1-0800200c9a66",
+      "label": "Conducted on",
+      "type": "datetime",
+      "options": {
+        "weighting": 1,
+        "enable_date": true,
+        "enable_time": true
+      },
+      "responses": { "datetime": "2018-02-09T06:47:37.000Z" }
+    },
+    {
+      "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66",
+      "item_id": "f3245d43-ea77-11e1-aff1-0800200c9a66",
+      "label": "Prepared by",
+      "type": "textsingle",
+      "responses": { "text": "Ankit Shah" }
+    },
+    {
+      "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66",
+      "item_id": "f3245d44-ea77-11e1-aff1-0800200c9a66",
+      "label": "Location",
+      "type": "address",
+      "responses": {}
+    }
+  ],
+  "items": [
+    {
+      "item_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "label": "Audit",
+      "type": "section",
+      "scoring": {
+        "combined_score": 0,
+        "combined_max_score": 19,
+        "combined_score_percentage": 0
+      },
+      "children": [ "1e08f258-497b-490b-8444-00b76335002e", "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a", "e2670aaa-a778-4117-bf17-3fdf89ef515d", "85637e54-44ab-4f6c-b704-f434fc0586f0", "5ac2bf0b-4a1b-4bb1-b53a-43b71ad3ff7c", "1f59f9f1-dff8-43de-9d21-9213061f8bc7", "b0881279-7494-4107-9b0e-10fe07367f24", "32dfa594-8f0a-4205-9872-35ddcc435fdb", "7d4e0eb5-6558-42bd-b9d2-4be3baaaa241", "5f9097b3-c4af-4bc4-be7b-16cdc2cd5260", "62d76c1e-cc54-465a-9a17-fabcdb58e310", "2e3ea9c2-1888-4ca9-8118-048b82898b83", "d256f630-cc05-4344-bd67-0242cc17baf3", "b8cb7344-923d-4f75-be36-060470ba6bf9", "5bfafdbe-5709-484d-b38d-a884d7258ce5", "4940ffdc-210b-4ce3-93eb-382d6d71c8c6", "5169d0ab-6b67-4224-90f6-3cc86fd7d401", "0fbb0241-a07e-4a43-bfd3-99378386522b", "ba52387d-d8e8-446c-8519-39f1276356be", "89b932e6-fe46-401c-987f-720e9b05100e", "42436909-7b30-4358-a7d7-f89fc231c026", "496d9d92-196b-406b-af67-44873ddfce31", "867a8884-43ff-4e0f-9110-06cf9ab72f11", "147dd973-d55f-4c12-9412-815ffc206355", "13fe3f4a-4f1d-43be-aa9b-152516ddf798", "49c9a343-aff4-4244-965d-9eda4d519608", "6d64683f-83da-4ea7-a9a1-8409e44cadae", "5763a2db-8d2e-4b11-b519-bc1ec352b80e", "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b", "9a9b05ce-9a6b-499a-8a2e-83e7eb91624e" ]
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "label": "Site Information",
+      "type": "category",
+      "children": [ "f3265c45-a89d-4703-88fc-1e01fdac89d4", "01638c1e-68e4-4bc2-a9df-ecbd472e49a6", "714c43f2-8ebb-4404-88c1-0be9f9ec8b19", "2a101486-c952-47b8-b942-49693c60fa4e", "354c6f87-4130-4df9-8daa-ff4da1666034", "62d92508-4e92-4da1-8dfb-41a0e890995c", "77efd426-48ad-48f9-bf09-4885f0ccd0f1", "a9e7e8f9-59b0-4600-9a42-de6155881637", "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3" ]
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "f3265c45-a89d-4703-88fc-1e01fdac89d4",
+      "label": "Site Functional Location",
+      "type": "textsingle",
+      "options": { "is_mandatory": false }
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "01638c1e-68e4-4bc2-a9df-ecbd472e49a6",
+      "label": "Site Audit Number",
+      "type": "textsingle",
+      "options": { "is_mandatory": false }
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "714c43f2-8ebb-4404-88c1-0be9f9ec8b19",
+      "label": "Date of Audit/Inspection",
+      "type": "datetime",
+      "options": {
+        "weighting": 1,
+        "is_mandatory": false,
+        "enable_date": true,
+        "enable_time": true
+      },
+      "responses": { "datetime": null }
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "2a101486-c952-47b8-b942-49693c60fa4e",
+      "label": "Site Description",
+      "type": "textsingle",
+      "options": { "is_mandatory": false }
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "354c6f87-4130-4df9-8daa-ff4da1666034",
+      "label": "Address",
+      "type": "address",
+      "options": { "is_mandatory": false }
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "62d92508-4e92-4da1-8dfb-41a0e890995c",
+      "label": "Age of Site",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "77efd426-48ad-48f9-bf09-4885f0ccd0f1",
+      "label": "Age of Switchboard",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "a9e7e8f9-59b0-4600-9a42-de6155881637",
+      "label": "ClearSCADA Site Location",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3",
+      "label": "AutoSave Site Name",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a",
+      "label": "General",
+      "type": "category",
+      "scoring": {
+        "combined_score": 0,
+        "combined_max_score": 0,
+        "combined_score_percentage": 0
+      },
+      "children": [ "06f376a8-6f2b-43ba-9751-e665ae9cb4d4", "662e1d17-d1b6-41c4-9d57-87d2691ca735" ]
+    },
+    {
+      "parent_id": "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a",
+      "item_id": "06f376a8-6f2b-43ba-9751-e665ae9cb4d4",
+      "label": "Power to the site",
+      "type": "list",
+      "scoring": {
+        "score": 0,
+        "max_score": 0,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 0,
+        "response_set": "d22b929f-ee3e-4c34-8f71-076c098e4098",
+        "failed_responses": [],
+        "multiple_selection": false
+      }
+    },
+    {
+      "parent_id": "7f779b37-1f70-4d8f-8ed9-a1275cdfa61a",
+      "item_id": "662e1d17-d1b6-41c4-9d57-87d2691ca735",
+      "label": "Details (if applicable)",
+      "type": "text"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "e2670aaa-a778-4117-bf17-3fdf89ef515d",
+      "label": "Is cubicle located in an outdoor environment?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66",
+        "failed_responses": []
+      },
+      "children": [ "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5" ]
+    },
+    {
+      "parent_id": "e2670aaa-a778-4117-bf17-3fdf89ef515d",
+      "item_id": "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "40b54306-21e2-45d9-b6c9-d0c38f5c9fbe", "6704f476-9e2b-4151-9264-f3c954c39285" ]
+    },
+    {
+      "parent_id": "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5",
+      "item_id": "40b54306-21e2-45d9-b6c9-d0c38f5c9fbe",
+      "label": "Details (if applicable)",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "e5a39ebc-ad7d-4bb1-a5e1-7f0bf0fb42e5",
+      "item_id": "6704f476-9e2b-4151-9264-f3c954c39285",
+      "label": "Photo of cubicle",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "85637e54-44ab-4f6c-b704-f434fc0586f0",
+      "label": "is there any graffiti/vandalism damage to property?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66",
+        "failed_responses": []
+      },
+      "children": [ "109ef0d2-3265-4cce-883a-451a9924bada" ]
+    },
+    {
+      "parent_id": "85637e54-44ab-4f6c-b704-f434fc0586f0",
+      "item_id": "109ef0d2-3265-4cce-883a-451a9924bada",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "84a58a44-3622-4230-81eb-16a79823ce34", "963169ee-38f3-468b-b015-0c050024e9c0" ]
+    },
+    {
+      "parent_id": "109ef0d2-3265-4cce-883a-451a9924bada",
+      "item_id": "84a58a44-3622-4230-81eb-16a79823ce34",
+      "label": "Details (if applicable)",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "109ef0d2-3265-4cce-883a-451a9924bada",
+      "item_id": "963169ee-38f3-468b-b015-0c050024e9c0",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "5ac2bf0b-4a1b-4bb1-b53a-43b71ad3ff7c",
+      "label": "Are cubicle keys correct?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "1f59f9f1-dff8-43de-9d21-9213061f8bc7",
+      "label": "Duty Selector Switches",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "b0881279-7494-4107-9b0e-10fe07367f24",
+      "label": "Details",
+      "type": "text"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "32dfa594-8f0a-4205-9872-35ddcc435fdb",
+      "label": "Photo",
+      "type": "media"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "7d4e0eb5-6558-42bd-b9d2-4be3baaaa241",
+      "label": "Control Selector Switches",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "5f9097b3-c4af-4bc4-be7b-16cdc2cd5260",
+      "label": "Details",
+      "type": "text"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "62d76c1e-cc54-465a-9a17-fabcdb58e310",
+      "label": "Photo",
+      "type": "media"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "2e3ea9c2-1888-4ca9-8118-048b82898b83",
+      "label": "Fencing, Lighting",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "d256f630-cc05-4344-bd67-0242cc17baf3",
+      "label": "Details",
+      "type": "text"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "b8cb7344-923d-4f75-be36-060470ba6bf9",
+      "label": "Photo",
+      "type": "media"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "5bfafdbe-5709-484d-b38d-a884d7258ce5",
+      "label": "Building/Cabinet",
+      "type": "textsingle"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "4940ffdc-210b-4ce3-93eb-382d6d71c8c6",
+      "label": "Details",
+      "type": "text"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "5169d0ab-6b67-4224-90f6-3cc86fd7d401",
+      "label": "Photo",
+      "type": "media"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "0fbb0241-a07e-4a43-bfd3-99378386522b",
+      "label": "Any new panels/cabinet?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "73d65535-38a0-4ead-8786-9ceb0afd6cf0" ]
+    },
+    {
+      "parent_id": "0fbb0241-a07e-4a43-bfd3-99378386522b",
+      "item_id": "73d65535-38a0-4ead-8786-9ceb0afd6cf0",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "91a97701-980b-470c-8339-e34e7b4ee978", "0fbfb256-d61e-47e9-97aa-a1e11d98f21c" ]
+    },
+    {
+      "parent_id": "73d65535-38a0-4ead-8786-9ceb0afd6cf0",
+      "item_id": "91a97701-980b-470c-8339-e34e7b4ee978",
+      "label": "Details",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "73d65535-38a0-4ead-8786-9ceb0afd6cf0",
+      "item_id": "0fbfb256-d61e-47e9-97aa-a1e11d98f21c",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "ba52387d-d8e8-446c-8519-39f1276356be",
+      "label": "Any Zelemite present in existing panel?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9" ]
+    },
+    {
+      "parent_id": "ba52387d-d8e8-446c-8519-39f1276356be",
+      "item_id": "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "4c97648c-8ffc-4aed-81f8-f206ad3bee6d", "56721193-15f8-4ccb-8829-7ad29c948c7e" ]
+    },
+    {
+      "parent_id": "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9",
+      "item_id": "4c97648c-8ffc-4aed-81f8-f206ad3bee6d",
+      "label": "Details",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "7ecb4a8c-5fcc-453e-a8a8-a2be9cd41da9",
+      "item_id": "56721193-15f8-4ccb-8829-7ad29c948c7e",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "89b932e6-fe46-401c-987f-720e9b05100e",
+      "label": "Communication",
+      "type": "category",
+      "scoring": {
+        "combined_score": 0,
+        "combined_max_score": 0,
+        "combined_score_percentage": 0
+      },
+      "children": [ "cde7e24b-9ad1-4495-8382-90ecf6d5541b" ]
+    },
+    {
+      "parent_id": "89b932e6-fe46-401c-987f-720e9b05100e",
+      "item_id": "cde7e24b-9ad1-4495-8382-90ecf6d5541b",
+      "label": "Comms Type",
+      "type": "list",
+      "scoring": {
+        "score": 0,
+        "max_score": 0,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "d22b929f-ee3e-4c34-8f71-076c098e4098",
+        "failed_responses": []
+      }
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "42436909-7b30-4358-a7d7-f89fc231c026",
+      "label": "Any existing Mast?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "3ae8bc4d-2216-4706-bc94-fbe5605443e7" ]
+    },
+    {
+      "parent_id": "42436909-7b30-4358-a7d7-f89fc231c026",
+      "item_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "8f6f712b-4e09-4272-aedd-f822004b83c9", "64fe3b3b-528f-4860-a6ad-268f6e91849d", "b0a0f4b2-020f-4e2f-b65e-97088c1e8fe2" ]
+    },
+    {
+      "parent_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7",
+      "item_id": "8f6f712b-4e09-4272-aedd-f822004b83c9",
+      "label": "Mast Height",
+      "type": "textsingle",
+      "inactive": true
+    },
+    {
+      "parent_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7",
+      "item_id": "64fe3b3b-528f-4860-a6ad-268f6e91849d",
+      "label": "Mast Location",
+      "type": "textsingle",
+      "inactive": true
+    },
+    {
+      "parent_id": "3ae8bc4d-2216-4706-bc94-fbe5605443e7",
+      "item_id": "b0a0f4b2-020f-4e2f-b65e-97088c1e8fe2",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "496d9d92-196b-406b-af67-44873ddfce31",
+      "label": "Any radio path barriers?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "4341fb40-2037-45bd-8f49-ab0989deec60" ]
+    },
+    {
+      "parent_id": "496d9d92-196b-406b-af67-44873ddfce31",
+      "item_id": "4341fb40-2037-45bd-8f49-ab0989deec60",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "70062bce-a689-4970-aee4-d12844903cb0", "0c7645c8-4df8-4fd5-8091-e56d54eb9db8" ]
+    },
+    {
+      "parent_id": "4341fb40-2037-45bd-8f49-ab0989deec60",
+      "item_id": "70062bce-a689-4970-aee4-d12844903cb0",
+      "label": "Details",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "4341fb40-2037-45bd-8f49-ab0989deec60",
+      "item_id": "0c7645c8-4df8-4fd5-8091-e56d54eb9db8",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "867a8884-43ff-4e0f-9110-06cf9ab72f11",
+      "label": "Is existing conduit and cable path to any existing mast OK?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "651390df-0ffb-49fb-b828-8c4f7e948862" ]
+    },
+    {
+      "parent_id": "867a8884-43ff-4e0f-9110-06cf9ab72f11",
+      "item_id": "651390df-0ffb-49fb-b828-8c4f7e948862",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "6cd3ca38-07b2-48dd-9e65-e67461e55273", "d90d3419-898e-4215-af29-aea991ad77f6" ]
+    },
+    {
+      "parent_id": "651390df-0ffb-49fb-b828-8c4f7e948862",
+      "item_id": "6cd3ca38-07b2-48dd-9e65-e67461e55273",
+      "label": "Comments",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "651390df-0ffb-49fb-b828-8c4f7e948862",
+      "item_id": "d90d3419-898e-4215-af29-aea991ad77f6",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "147dd973-d55f-4c12-9412-815ffc206355",
+      "label": "Is conduit path to any new mast OK?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "58f5b92d-21ac-4f99-a754-2e3854f20f9b" ]
+    },
+    {
+      "parent_id": "147dd973-d55f-4c12-9412-815ffc206355",
+      "item_id": "58f5b92d-21ac-4f99-a754-2e3854f20f9b",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "636c41e2-d8f7-4ec6-88c3-0cd642bc51c1", "9fbe5194-41b3-4492-8baa-1bd98a5fa884" ]
+    },
+    {
+      "parent_id": "58f5b92d-21ac-4f99-a754-2e3854f20f9b",
+      "item_id": "636c41e2-d8f7-4ec6-88c3-0cd642bc51c1",
+      "label": "Comments",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "58f5b92d-21ac-4f99-a754-2e3854f20f9b",
+      "item_id": "9fbe5194-41b3-4492-8baa-1bd98a5fa884",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "13fe3f4a-4f1d-43be-aa9b-152516ddf798",
+      "label": "Location for new mast",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f" ]
+    },
+    {
+      "parent_id": "13fe3f4a-4f1d-43be-aa9b-152516ddf798",
+      "item_id": "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "d4e04818-4b10-49cc-8650-d136b3d4e806", "836d1508-783d-4d6d-872c-8647814b6b6b" ]
+    },
+    {
+      "parent_id": "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f",
+      "item_id": "d4e04818-4b10-49cc-8650-d136b3d4e806",
+      "label": "Comments",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "bb8b5cdc-47ac-4dfd-8707-b6728f915e9f",
+      "item_id": "836d1508-783d-4d6d-872c-8647814b6b6b",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "49c9a343-aff4-4244-965d-9eda4d519608",
+      "label": "Drawings",
+      "type": "category"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "6d64683f-83da-4ea7-a9a1-8409e44cadae",
+      "label": "As-constructed drawings/markups",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "a93580dd-98ca-404a-9c6b-4da930acc3d7" ]
+    },
+    {
+      "parent_id": "6d64683f-83da-4ea7-a9a1-8409e44cadae",
+      "item_id": "a93580dd-98ca-404a-9c6b-4da930acc3d7",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      },
+      "label": "",
+      "children": [ "c8035bc7-2b46-47ca-bf00-a5bd4116ea5c", "a8731236-6ed5-4376-9afd-cade2f5faa94" ]
+    },
+    {
+      "parent_id": "a93580dd-98ca-404a-9c6b-4da930acc3d7",
+      "item_id": "c8035bc7-2b46-47ca-bf00-a5bd4116ea5c",
+      "label": "Details",
+      "type": "text",
+      "inactive": true
+    },
+    {
+      "parent_id": "a93580dd-98ca-404a-9c6b-4da930acc3d7",
+      "item_id": "a8731236-6ed5-4376-9afd-cade2f5faa94",
+      "label": "Photo",
+      "type": "media",
+      "inactive": true
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "label": "RTUs and PLCs",
+      "type": "category",
+      "scoring": {
+        "combined_score": 0,
+        "combined_max_score": 7,
+        "combined_score_percentage": 0
+      },
+      "children": [ "29d82e5a-3b56-48b2-ac66-e624b30bde26", "6359ad3f-1869-47e6-9e66-c43b6e9b9cfc", "89fd2a8a-6ec9-49f1-ad5c-ff0143740b71", "7046c0f1-864d-49c8-ab13-a1576519efac", "9e204028-a081-482d-8955-4091d9da65fd", "67557d75-bec5-423c-a34d-4581a387e3b7", "9430d6f2-f642-4b4d-947c-56d0e7a7f792", "a97295cd-ba7b-4442-84f9-3b90969b805a", "8c892a7d-49a9-47a8-bdf9-225115a63a33", "4e2143c9-331c-4b9d-a893-b19ac754bc72" ]
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "29d82e5a-3b56-48b2-ac66-e624b30bde26",
+      "label": "Existing Ademco",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "6359ad3f-1869-47e6-9e66-c43b6e9b9cfc",
+      "label": "Existing RTU",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "89fd2a8a-6ec9-49f1-ad5c-ff0143740b71",
+      "label": "Existing PLC",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "7046c0f1-864d-49c8-ab13-a1576519efac",
+      "label": "Existing PSTN Modem",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "9e204028-a081-482d-8955-4091d9da65fd",
+      "label": "Pump Controller (e.g. SM7, etc.)",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "67557d75-bec5-423c-a34d-4581a387e3b7",
+      "label": "Registration expiry date",
+      "type": "datetime",
+      "options": {
+        "weighting": 1,
+        "enable_date": true,
+        "enable_time": true
+      },
+      "responses": { "datetime": null }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "9430d6f2-f642-4b4d-947c-56d0e7a7f792",
+      "label": "Transmission type",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "51900889-ac15-4357-9626-be65c36c06f0"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "a97295cd-ba7b-4442-84f9-3b90969b805a",
+      "label": "Is the an energy effcient vehicle?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      },
+      "children": [ "22aef13d-ac8d-4d03-a73c-1ff43c6005ed" ]
+    },
+    {
+      "parent_id": "a97295cd-ba7b-4442-84f9-3b90969b805a",
+      "item_id": "22aef13d-ac8d-4d03-a73c-1ff43c6005ed",
+      "label": "",
+      "type": "smartfield",
+      "evaluation": false,
+      "options": {
+        "values": [ "8bcfbf00-e11b-11e1-9b23-0800200c9a66" ],
+        "condition": "3f206182-e4f6-11e1-aff1-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "8c892a7d-49a9-47a8-bdf9-225115a63a33",
+      "label": "Regular storage or parking location",
+      "type": "address"
+    },
+    {
+      "parent_id": "5763a2db-8d2e-4b11-b519-bc1ec352b80e",
+      "item_id": "4e2143c9-331c-4b9d-a893-b19ac754bc72",
+      "label": "Photo of vehicle for verification",
+      "type": "media"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b",
+      "label": "Sample Summary and Signoff",
+      "type": "category",
+      "scoring": {
+        "combined_score": 0,
+        "combined_max_score": 1,
+        "combined_score_percentage": 0
+      },
+      "children": [ "6c00435b-5f25-483d-be7e-8e612c49ab1b", "266f8f3a-5541-45d4-95f4-55d7786e7a1d", "6eb5a703-4d36-4145-bcba-f9f787054247" ]
+    },
+    {
+      "parent_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b",
+      "item_id": "6c00435b-5f25-483d-be7e-8e612c49ab1b",
+      "label": "Did the vehicle pass the inspection overall?",
+      "type": "question",
+      "scoring": {
+        "score": 0,
+        "max_score": 1,
+        "score_percentage": 0
+      },
+      "options": {
+        "weighting": 1,
+        "response_set": "7bb1cb10-7020-11e2-bcfd-0800200c9a66"
+      }
+    },
+    {
+      "parent_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b",
+      "item_id": "266f8f3a-5541-45d4-95f4-55d7786e7a1d",
+      "label": "Quick summary of major issues",
+      "type": "text"
+    },
+    {
+      "parent_id": "0aabc615-9aec-4bc0-b8d3-d7a5c2fc665b",
+      "item_id": "6eb5a703-4d36-4145-bcba-f9f787054247",
+      "label": "Name and signature of inspector",
+      "type": "signature"
+    },
+    {
+      "parent_id": "e6d8653a-eb76-40a2-ac0a-cec653bda638",
+      "item_id": "9a9b05ce-9a6b-499a-8a2e-83e7eb91624e",
+      "label": "",
+      "type": "text"
+    }
+  ]
+}
+{
+
+}

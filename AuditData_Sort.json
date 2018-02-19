@@ -1,0 +1,101 @@
+{
+  "template_id": "template_e1a05cecebfb461183a21b57d9685203",
+  "audit_id": "audit_e7b35a42aa2841ad9baf3184bd902b47",  
+  "created_at": "2018-02-09T06:47:23.845Z",
+  "modified_at": "2018-02-09T06:47:39.545Z",
+  "audit_data": {
+    "score": 0,
+    "total_score": 19,
+    "score_percentage": 0,
+    "name": "9 Feb 2018 / Ankit Shah",
+    "duration": 0,
+    "authorship": {
+      "device_id": "8a582619-95e9-43e8-b671-5f316745b254",
+      "owner": "Ankit Shah",
+      "owner_id": "user_91d1fae6891d47cc868ca092a685b970",
+      "author": "Ankit Shah",
+      "author_id": "user_91d1fae6891d47cc868ca092a685b970"
+    },
+    "date_completed": null,
+    "date_modified": "2018-02-09T06:47:38.935Z",
+    "date_started": "2018-02-09T06:47:23.845Z"
+  },
+
+  "header_items": [
+    {
+      "item_id": "f3245d39-ea77-11e1-aff1-0800200c9a66",
+      "label": "Title Page",
+      "type": "section",
+      "responses": {}
+    },
+
+    {
+      "parent_id": "f3245d39-ea77-11e1-aff1-0800200c9a66",
+      "item_id": "f3245d44-ea77-11e1-aff1-0800200c9a66",
+      "label": "Location",
+      "type": "address",
+      "responses": {}
+    }
+  ],
+  "items": [
+
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "f3265c45-a89d-4703-88fc-1e01fdac89d4",
+      "label": "Site Functional Location",
+      "type": "textsingle",
+      "responses": {}
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "01638c1e-68e4-4bc2-a9df-ecbd472e49a6",
+      "label": "Site Audit Number",
+      "type": "textsingle",
+      "responses": {}
+    },
+
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "2a101486-c952-47b8-b942-49693c60fa4e",
+      "label": "Site Description",
+      "type": "textsingle",
+      "responses": {}
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "354c6f87-4130-4df9-8daa-ff4da1666034",
+      "label": "Address",
+      "type": "address",
+      "responses": {}
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "62d92508-4e92-4da1-8dfb-41a0e890995c",
+      "label": "Age of Site",
+      "type": "textsingle",
+      "responses": {}
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "77efd426-48ad-48f9-bf09-4885f0ccd0f1",
+      "label": "Age of Switchboard",
+      "type": "textsingle",
+      "responses": {}
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "a9e7e8f9-59b0-4600-9a42-de6155881637",
+      "label": "ClearSCADA Site Location",
+      "type": "textsingle",
+      "responses": {}
+    },
+    {
+      "parent_id": "1e08f258-497b-490b-8444-00b76335002e",
+      "item_id": "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3",
+      "label": "AutoSave Site Name",
+      "type": "textsingle",
+      "responses": {}
+    }     
+  
+  ]
+}
