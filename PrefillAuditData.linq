@@ -39,8 +39,8 @@ class Program
 	{
 		
 		Program P = new Program();
-		P.preFillAuditData();
-		//result.Dump();
+		var result = P.preFillAuditData();
+		result.Dump();
 	}
 
 	static void Authentication()
@@ -66,63 +66,34 @@ class Program
 	//NuGet Package ExcelDataReader
 	//Reference (https://github.com/ExcelDataReader/ExcelDataReader)
 	
-	public void preFillAuditData()
+	public List<excelPreFillData> preFillAuditData()
 	{
 		string filePath = @"C:\Dev\iAuditorIntegration\PM-#13374002-v6B-WORM_Site_Audit_Sheet.XLSM";
 		FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
 
 		//Reading from a OpenXml Excel file (2007 format; *.xlsx)
 		IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
-	
+
 		//DataSet - The result of each spreadsheet will be created in the result.Tables
 		DataSet result = excelReader.AsDataSet();
 
-		//Data Reader methods
-//		while (excelReader.Read())
-//		{
-//			//excelReader.GetInt32(0);
-//
-//		}
 		// Count number of rows and columns	
-		var columnCount = result.Tables[2].Columns.Count.ToString();
-		var rowCount = result.Tables[2].Rows.Count.ToString();
-		DataTable table =result.Tables["Modified sitelist"];
-		var colResult = table.Columns.Cast<DataColumn>().Where(x =>x.ColumnName == "Column2");	//StartsWith("C", StringComparison.InvariantCultureIgnoreCase)
-		//colResult.Dump();
-		int i =0;
-//		foreach(DataColumn col in result.Tables[2].Columns)
-//		{
-			//Cast operator will convert the DataRow into IEnumerable<T> to use LINQ expression
-			
-			foreach (DataRow row in result.Tables[2].Rows.Cast<DataRow>().Skip(1))
-			{
-				Console.WriteLine(row["Column2"]);
-				i = i+1;
-			}
-		
-//		}
-			Console.WriteLine(i);		
-		
-		// Use the Select method to find all rows matching the filter.
-//		DataRow[] foundRows = table.Select();
-		//foundRows.Dump();
-//		// Print column 0 of each returned row.
-//		for (int i = 0; i < foundRows.Length; i++)
-//		{
-//			Console.WriteLine(foundRows[i][0]);
-//		}
-//		foreach (DataColumn col in result.Tables[2].Columns)
-//		{					
-//			//col.Dump();
-//			foreach (DataRow row in result.Tables[2].Rows)
-//			{
-//				var value = row[col.ColumnName].ToString().Dump();
-//				//Console.WriteLine(row[col.ColumnName].ToString());
-//			}
-//		}
-		//Free resources (IExcelDataReader is IDisposable)
+		//var columnCount = result.Tables[2].Columns.Count.ToString();
+		//var rowCount = result.Tables[2].Rows.Count.ToString();
+
+		DataTable table = result.Tables["Modified sitelist"];
+		var colResult = table.Columns.Cast<DataColumn>().Where(x => x.ColumnName == "Column2");
+		List<excelPreFillData> excellData = new List<excelPreFillData>();
+
+		//Cast operator will convert the DataRow into IEnumerable<T> to use LINQ expression
+
+		foreach (DataRow row in result.Tables[2].Rows.Cast<DataRow>().Skip(1))
+		{
+			excellData.Add(new excelPreFillData(row["Column2"].ToString(), row["Column0"].ToString(), row["Column1"].ToString(), string.Concat(row["Column5"] + "" + row["Column6"] + "" + row["Column7"]), row["Column8"].ToString()));
+		}		
 		excelReader.Close();
-	}
+		return excellData;
+	}	
 
 	async Task<Result> getAllAuditIds()
 	{
@@ -293,4 +264,22 @@ public class Responses
 public class Responses2
 {
 	public string text {get; set;}
+}
+
+public class excelPreFillData
+{
+	public string functionLocation { get; set; }
+	public string auditNumber { get; set; }
+	public string stationName { get; set; }
+	public string address { get; set; }
+	public string autoSaveLocation { get; set; }
+
+	public excelPreFillData(string _functionLocation, string _auditNumber, string _stationName, string _address, string _autoSaveLocation)
+	{
+		functionLocation = _functionLocation;
+		auditNumber = _auditNumber;
+		stationName = _stationName;
+		address = _address;
+		autoSaveLocation = _autoSaveLocation;
+	}
 }
