@@ -24,7 +24,7 @@ iAuditor Developer API (https://developer.safetyculture.io/)
 class Program
 {
 	static string path = "https://api.safetyculture.io/audits/search?field=audit_id&field=modified_at";
-	
+	static string text = File.ReadAllText(@"C:\Users\ankit\OneDrive\Desktop\Auth.txt");
 	static HttpClient client = new HttpClient();
 	//HttpClient is intended to be instantiated once and reused throughout the life of an application.
 	
@@ -40,7 +40,7 @@ class Program
 		client.BaseAddress = new Uri("https://api.safetyculture.io/");
 		client.DefaultRequestHeaders.Accept.Clear();
 		client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "f15b0066dd556c6a40e9b1572ab804d10071e5d37067ce8e0766347c43322d9d");
+		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", text);
 	}
 
 	async Task<Result> getAuditId(string path)

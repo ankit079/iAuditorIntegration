@@ -12,11 +12,11 @@ void Main()
 	var response = getAuditId();
 	response.Dump();
 }
-
+static string text = File.ReadAllText(@"C:\Users\ankit\OneDrive\Desktop\Auth.txt");
 static HttpClient client = new HttpClient();
 async Task<string> getAuditId()
 {
-	client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "f15b0066dd556c6a40e9b1572ab804d10071e5d37067ce8e0766347c43322d9d");
+	client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", text);
 	var response = await client.GetAsync("https://api.safetyculture.io/audits/search?field=audit_id&field=modified_at");
 	var responseString = await response.Content.ReadAsStringAsync();
 	//var res = JsonConvert.DeserializeObject(responseString);
