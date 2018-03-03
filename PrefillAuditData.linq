@@ -29,7 +29,7 @@ Reference of API implementation was sourced from
 https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client
 iAuditor Developer API (https://developer.safetyculture.io/)
 */
-
+ 
 class Program
 {
 	static HttpClient client = new HttpClient();
@@ -37,22 +37,32 @@ class Program
 	static string authToken = File.ReadAllText(@"C:\Users\ankit\OneDrive\Desktop\Auth.txt");
 	static void Main()
 	{
+		//client.Dispose();
 		//Dummy audit path for testing
 		//const string _apipath = "https://api.safetyculture.io/audits/audit_ba172c751d38419eaa0f61f9b50cc149";
 		Program P = new Program();	
+		
+		//To create audits
+		/*var auditCreated = P.StartAudit();	
+		auditCreated.Dump();*/
+		
+		//To get all auditIds
 		var result = P.getAllAuditIds();
 		var apipath = P.getAllAuditIdApiPath(result.Result).ToArray();
-		var prefillData = P.preFillAuditData();		
+		var prefillData = P.preFillAuditData();	
+//		prefillData.Dump();
 		int auditCount = 0;
 		
-		for (auditCount= 0; auditCount < 5; auditCount++)
+		for (auditCount= 0; auditCount < 4; auditCount++)
 		{
-			var auditResult = P.getEachAuditResult(apipath[auditCount]).Result;	
-			var updatedAuditData = P.modifyAudit(auditResult,prefillData,auditCount);
-			updatedAuditData.Dump();
-		}
-				
-		client.Dispose();
+			var auditResult = P.getEachAuditResult(apipath[auditCount]).Result;
+			var modifiedAuditData = P.modifyAudit(auditResult, prefillData, auditCount);
+			string modifiedAuditDataJSON = JsonConvert.SerializeObject(modifiedAuditData,
+   			Newtonsoft.Json.Formatting.Indented,
+   			new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+   			modifiedAuditDataJSON.Dump();
+		}	
+		
 	}
 
 	static void Authentication()
@@ -64,7 +74,7 @@ class Program
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
 	}
 
-	async Task<Uri> CreateEmptyAuditFromTemplate()
+	async Task<string> StartAudit()
 	{
 		Authentication();
 		var values = new Dictionary<string, string> {
@@ -72,7 +82,7 @@ class Program
 		var content = new FormUrlEncodedContent(values);
 		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits", JsonConvert.SerializeObject(values));
 		response.EnsureSuccessStatusCode();
-		return response.Headers.Location;
+		return response.Headers.Location.ToString();
 	}
 
 	async Task<Result> getAllAuditIds()
@@ -117,10 +127,12 @@ class Program
 		//{
 		var response = await client.GetAsync(auditApiPath);
 		var result = await response.Content.ReadAsStringAsync();
+		//result.Dump();
 		var auditData = JsonConvert.DeserializeObject<AuditData>(result);
 		//auditResult.Add(auditData);
 		//}		
-		return auditData;
+		//auditData.Dump();
+		return auditData;		
 	}
 
 	//NuGet Package ExcelDataReader
@@ -157,26 +169,83 @@ class Program
 
 	async Task<AuditData> modifyAudit(AuditData auditResult, List<excelPreAuditData> preFillAuditData, int auditCount)
 	{
-		excelPreAuditData[] dataArray = preFillAuditData.ToArray();
-		var result = auditResult.items.Select(i =>
-   		{
-			   if(i.label == "Site Functional Location") i.responses.text = dataArray[auditCount].functionLocation;
-			   if(i.label == "Site Audit Number") i.responses.text = dataArray[auditCount].auditNumber;
-			   if(i.label == "Site Description") i.responses.text = dataArray[auditCount].stationName;
-			   if(i.label == "Address") i.responses.text = dataArray[auditCount].address;
-			   if(i.label == "AutoSave Site Name") i.responses.text = dataArray[auditCount].autoSaveLocation;
-			   return i;
-  		 }).ToList();	
-		 
-		var changedItems = auditResult.items.Where(i => i.label == "Site Functional Location")
-											.Where(i => i.label == "Site Audit Number")
-											.Where(i => i.label == "Site Description")
-											.Where(i => i.label == "Address")
-											.Where(i => i.label == "AutoSave Site Name").ToList();
-		
 		Dictionary<string, List<Item>> value = new Dictionary<string, List<Item>>();
-		value.Add("items", changedItems);
+		excelPreAuditData[] dataArray = preFillAuditData.ToArray();
+		//auditResult.items.Dump();
+		string auditResult_JSON = JsonConvert.SerializeObject(auditResult.items,
+				Newtonsoft.Json.Formatting.Indented,
+				new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+		//auditResult_JSON.Dump();
+		var updateItem1 = auditResult.items.Where(i => i.label == "Site Functional Location").Select(x => x.responses); ;
 
+		foreach (var item in updateItem1)
+		{
+			item.text = dataArray[auditCount].functionLocation.ToString();
+		}
+		var changedItems = auditResult.items.Where(i => i.label == "Site Functional Location").ToList();
+
+		value.Add("items", changedItems);
+		//value.Dump();
+		string ignored = JsonConvert.SerializeObject(value,
+		Newtonsoft.Json.Formatting.Indented,
+		new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+		//ignored.Dump();
+		
+		//[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		
+		//var updatedAuditResult = new AuditData();
+
+//		string ignored = JsonConvert.SerializeObject(auditResult,
+//		Newtonsoft.Json.Formatting.Indented,
+//		new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+//		ignored.Dump();
+		
+		//updatedAuditResult =  auditResult.items
+		//string output = JsonConvert.SerializeObject(auditResult);
+		//output.Dump();
+		
+//		StringBuilder sb = new StringBuilder();
+//		StringWriter sw = new StringWriter(sb);
+//		using (JsonWriter writer = new JsonTextWriter(sw))
+//		writer = auditResult.;
+		
+//				var updateItem1 = auditResult.items.Where(i => i.label == "Age of Site");				
+//				updateItem1.Dump();
+//				foreach (var item in updateItem1)
+//				{
+//					updatedAuditResult.items.responses.text = dataArray[auditCount].functionLocation.ToString();
+//					item.item_id = auditResult.
+//				}
+//		var changedItems = updatedAuditResult.items.Where(i => i.label == "Age of Site").ToList();
+//
+//		value.Add("items", changedItems);
+//
+//		//		var updateItem1 = auditResult.items.Where(i =>i.label == "Site Functional Location").ToList();
+//		//		value.Add("items", updateItem1);
+//		//value.Dump();
+//		string output = JsonConvert.SerializeObject(value);
+//		output.Dump();	
+//		var updateResponse2 = auditResult.items.Where(i => i.label == "Site Audit Number").Select(x => x.responses);
+//
+//		var updateItem2 = auditResult.items.Where(i => i.label == "Site Audit Number").ToList();
+//		value.Add("items", updateItem2);
+//		var updateItem3 = auditResult.items.Where(i => i.label == "Site Description").Select(x => x.responses);
+//		foreach (var item in updateItem3)
+//		{
+//			item.text = dataArray[auditCount].stationName;
+//		}
+//
+//		var updateItem4 = auditResult.items.Where(i => i.label == "Address").Select(x => x.responses);
+//		foreach (var item in updateItem4)
+//		{
+//			item.text = dataArray[auditCount].address;
+//		}
+//		var updateItem5 = auditResult.items.Where(i => i.label == "AutoSave Site Name").Select(x => x.responses);
+//		foreach (var item in updateItem5)
+//		{
+//			item.text = dataArray[auditCount].autoSaveLocation;
+//		}
+			
 		HttpResponseMessage response = await client.PutAsJsonAsync($"https://api.safetyculture.io/audits/{auditResult.audit_id}", value);
 		response.EnsureSuccessStatusCode();
 
@@ -283,31 +352,31 @@ public class AuditDetails
 
 public class HeaderItem
 {
+	[JsonProperty]
 	public string item_id { get; set; }
 	public string label { get; set; }
-	public string type { get; set; }
-	public List<string> children { get; set; }
-	public string parent_id { get; set; }
+	public string type { get; set; }		
 	public Responses2 responses { get; set; }
 }
 
 public class Item
 {
-	public string parent_id { get; set; }
 	public string item_id { get; set; }
 	public string label { get; set; }
-	public string type { get; set; }
+	public string type { get; set; }	
 	public Responses responses { get; set; }
 }
 
 public class Responses
 {
+	//public object datetime { get; set; }
 	public string text { get; set; }
 }
 
 public class Responses2
 {
 	public string text { get; set; }
+	//public DateTime datetime { get; set; }
 }
 
 public class excelPreAuditData
@@ -326,10 +395,4 @@ public class excelPreAuditData
 		address = _address;
 		autoSaveLocation = _autoSaveLocation;
 	}
-}
-
-public class Update
-{
-	public string item_id { get; set; }
-	public Responses Response { get; set; }
 }
