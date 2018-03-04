@@ -43,26 +43,31 @@ class Program
 		Program P = new Program();	
 		
 		//To create audits
-		/*var auditCreated = P.StartAudit();	
-		auditCreated.Dump();*/
+//		var auditCreated = P.StartAudit();	
+//		auditCreated.Dump();
 		
 		//To get all auditIds
-		var result = P.getAllAuditIds();
-		var apipath = P.getAllAuditIdApiPath(result.Result).ToArray();
+//		var result = P.getAllAuditIds();
+		//result.Dump();
+//		var apipath = P.getAllAuditIdApiPath(result.Result).ToArray();
+		//apipath.Dump();
 		var prefillData = P.preFillAuditData();	
 //		prefillData.Dump();
 		int auditCount = 0;
-		
-		for (auditCount= 0; auditCount < 4; auditCount++)
+		for (auditCount= 0; auditCount < 1; auditCount++)
 		{
-			var auditResult = P.getEachAuditResult(apipath[auditCount]).Result;
-			var modifiedAuditData = P.modifyAudit(auditResult, prefillData, auditCount);
-			string modifiedAuditDataJSON = JsonConvert.SerializeObject(modifiedAuditData,
-   			Newtonsoft.Json.Formatting.Indented,
-   			new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-   			modifiedAuditDataJSON.Dump();
-		}	
-		
+			var startAuditData = P.StartAudit(prefillData, auditCount);
+			
+//			var auditResult = P.getEachAuditResult(apipath[auditCount]).Result;
+//			auditResult.Dump();
+			
+			
+			//var modifiedAuditData = P.modifyAudit(auditResult, prefillData, auditCount);
+//			string modifiedAuditDataJSON = JsonConvert.SerializeObject(modifiedAuditData,
+//   			Newtonsoft.Json.Formatting.Indented,
+//   			new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+   			//modifiedAuditDataJSON.Dump();			
+		}			
 	}
 
 	static void Authentication()
@@ -74,13 +79,67 @@ class Program
 		client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
 	}
 
-	async Task<string> StartAudit()
+	async Task<string> StartAudit(List<excelPreAuditData> preFillAuditData,int auditCount)
 	{
-		Authentication();
-		var values = new Dictionary<string, string> {
+		Authentication();	
+		excelPreAuditData[] dataArray = preFillAuditData.ToArray();
+
+		var auditFeeds = new List<StartAuditFeedItems>
+		{
+			new StartAuditFeedItems{item_id = "f3265c45-a89d-4703-88fc-1e01fdac89d4",
+									label = "Site Functional Location",
+									type = "textsingle",
+									responses = new Responses1{text =dataArray[auditCount].functionLocation.ToString()}},
+									
+			new StartAuditFeedItems{item_id = "01638c1e-68e4-4bc2-a9df-ecbd472e49a6",
+									label = "Site Audit Number",
+									type = "textsingle",
+									responses = new Responses1{text = dataArray[auditCount].auditNumber.ToString()}},
+									
+			new StartAuditFeedItems{item_id = "c28d7372-8305-435d-9571-d09e5cdfad77",
+									label = "Site Description",
+									type = "textsingle",
+									responses = new Responses1{text =dataArray[auditCount].stationName.ToString()}},
+									
+			new StartAuditFeedItems{item_id = "ae244730-779e-4d30-b5c1-802296b2d9eb",
+									label = "Address",
+									type = "text",
+									responses = new Responses1{text =dataArray[auditCount].address.ToString()}},
+									
+			new StartAuditFeedItems{item_id = "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3",
+									label = "AutoSave Site Name",
+									type = "textsingle",
+									responses = new Responses1{text =dataArray[auditCount].autoSaveLocation.ToString()}}
+		};
+
+		JObject rss =
+			new JObject(
+				//new JProperty("header_items",
+					new JObject(
+						new JProperty("template_id", "template_e1a05cecebfb461183a21b57d9685203"),
+						//new JProperty("audit_id", "http://james.newtonking.com"),
+						//new JProperty("description", "James Newton-King's blog."),
+						new JProperty("items",
+							new JArray(
+								from p in auditFeeds
+								orderby p.item_id
+								select new JObject(
+									new JProperty("item_id", p.item_id),
+									new JProperty("label", p.label),
+									new JProperty("type", p.type),
+									new JProperty("responses",
+										new JObject(
+											new JProperty("text", p.responses.text))))))));
+
+		//rss.ToString().Dump();
+
+		/*var values = new Dictionary<string, string> {
   				{"template_id", "template_e1a05cecebfb461183a21b57d9685203"}};
-		var content = new FormUrlEncodedContent(values);
-		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits", JsonConvert.SerializeObject(values));
+		var content = new FormUrlEncodedContent(values);		
+		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits", JsonConvert.SerializeObject(values));*/
+
+		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits",JsonConvert.SerializeObject(rss));
+		response.Dump();
 		response.EnsureSuccessStatusCode();
 		return response.Headers.Location.ToString();
 	}
@@ -129,6 +188,13 @@ class Program
 		var result = await response.Content.ReadAsStringAsync();
 		//result.Dump();
 		var auditData = JsonConvert.DeserializeObject<AuditData>(result);
+//		var settings = new JsonSerializerSettings
+//		{
+//			NullValueHandling = NullValueHandling.Ignore,
+//			MissingMemberHandling = MissingMemberHandling.Ignore
+//		};
+//		var auditData = JsonConvert.DeserializeObject<AuditData>(result, settings);
+				
 		//auditResult.Add(auditData);
 		//}		
 		//auditData.Dump();
@@ -167,15 +233,75 @@ class Program
 		return excellData;
 	}
 
-	async Task<AuditData> modifyAudit(AuditData auditResult, List<excelPreAuditData> preFillAuditData, int auditCount)
+	//async Task<AuditData> modifyAudit(AuditData auditResult, List<excelPreAuditData> preFillAuditData, int auditCount)
+	public void modifyAudit(AuditData auditResult, List<excelPreAuditData> preFillAuditData, int auditCount)
 	{
-		Dictionary<string, List<Item>> value = new Dictionary<string, List<Item>>();
+		//Dictionary<string, List<Item>> value = new Dictionary<string, List<Item>>();
 		excelPreAuditData[] dataArray = preFillAuditData.ToArray();
 		//auditResult.items.Dump();
 		string auditResult_JSON = JsonConvert.SerializeObject(auditResult.items,
 				Newtonsoft.Json.Formatting.Indented,
 				new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 		//auditResult_JSON.Dump();
+		var listItems = new List<Item>();
+		foreach (var item in auditResult.items)
+		{
+			try
+			{
+				if (item.label == "Site Functional Location")
+				{
+					item.responses.text = dataArray[auditCount].functionLocation.ToString();
+					//var changedItem = auditResult.items.Where(i => i.label == "Site Functional Location");
+					listItems.Add(item);
+				}
+
+				else if (item.label == "Site Audit Number")
+				{
+					item.responses.text = dataArray[auditCount].auditNumber.ToString();
+					//var changedItem = auditResult.items.Where(i => i.label == "Site Audit Number").ToList();
+					listItems.Add(item);
+				}
+
+				else if (item.label == "Site Description")
+				{
+					item.responses.text = dataArray[auditCount].stationName.ToString();
+					//var changedItem = auditResult.items.Where(i => i.label == "Site Description").ToList();
+					listItems.Add(item);
+				}
+
+				else if (item.label == "Address")
+				{
+					item.responses.text = dataArray[auditCount].address.ToString();
+					//var changedItem = auditResult.items.Where(i => i.label == "Address").ToList();
+					listItems.Add(item);
+				}
+
+				else if (item.label == "AutoSave Site Name")
+				{
+					item.responses.text = dataArray[auditCount].autoSaveLocation.ToString();
+					//var changedItem = auditResult.items.Where(i => i.label == "AutoSave Site Name").ToList();
+					listItems.Add(item);
+				}
+
+				var value = new Dictionary<string, List<Item>> {
+  				{"items", listItems}};
+				value.Dump();
+
+				string changedItemValues = JsonConvert.SerializeObject(value,
+				Newtonsoft.Json.Formatting.Indented,
+				new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+				changedItemValues.Dump();
+				//		string output = JsonConvert.SerializeObject(value);
+				//		output.Dump();
+			}
+			catch(Exception e)
+			{
+				e.Dump();
+			}
+
+		}
+
+		/*Original Code
 		var updateItem1 = auditResult.items.Where(i => i.label == "Site Functional Location").Select(x => x.responses); ;
 
 		foreach (var item in updateItem1)
@@ -185,74 +311,24 @@ class Program
 		var changedItems = auditResult.items.Where(i => i.label == "Site Functional Location").ToList();
 
 		value.Add("items", changedItems);
+		
 		//value.Dump();
 		string ignored = JsonConvert.SerializeObject(value,
 		Newtonsoft.Json.Formatting.Indented,
 		new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 		//ignored.Dump();
-		
-		//[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-		
-		//var updatedAuditResult = new AuditData();
 
-//		string ignored = JsonConvert.SerializeObject(auditResult,
-//		Newtonsoft.Json.Formatting.Indented,
-//		new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-//		ignored.Dump();
-		
-		//updatedAuditResult =  auditResult.items
-		//string output = JsonConvert.SerializeObject(auditResult);
-		//output.Dump();
-		
-//		StringBuilder sb = new StringBuilder();
-//		StringWriter sw = new StringWriter(sb);
-//		using (JsonWriter writer = new JsonTextWriter(sw))
-//		writer = auditResult.;
-		
-//				var updateItem1 = auditResult.items.Where(i => i.label == "Age of Site");				
-//				updateItem1.Dump();
-//				foreach (var item in updateItem1)
-//				{
-//					updatedAuditResult.items.responses.text = dataArray[auditCount].functionLocation.ToString();
-//					item.item_id = auditResult.
-//				}
-//		var changedItems = updatedAuditResult.items.Where(i => i.label == "Age of Site").ToList();
-//
-//		value.Add("items", changedItems);
-//
-//		//		var updateItem1 = auditResult.items.Where(i =>i.label == "Site Functional Location").ToList();
-//		//		value.Add("items", updateItem1);
-//		//value.Dump();
 //		string output = JsonConvert.SerializeObject(value);
 //		output.Dump();	
-//		var updateResponse2 = auditResult.items.Where(i => i.label == "Site Audit Number").Select(x => x.responses);
-//
-//		var updateItem2 = auditResult.items.Where(i => i.label == "Site Audit Number").ToList();
-//		value.Add("items", updateItem2);
-//		var updateItem3 = auditResult.items.Where(i => i.label == "Site Description").Select(x => x.responses);
-//		foreach (var item in updateItem3)
-//		{
-//			item.text = dataArray[auditCount].stationName;
-//		}
-//
-//		var updateItem4 = auditResult.items.Where(i => i.label == "Address").Select(x => x.responses);
-//		foreach (var item in updateItem4)
-//		{
-//			item.text = dataArray[auditCount].address;
-//		}
-//		var updateItem5 = auditResult.items.Where(i => i.label == "AutoSave Site Name").Select(x => x.responses);
-//		foreach (var item in updateItem5)
-//		{
-//			item.text = dataArray[auditCount].autoSaveLocation;
-//		}
-			
-		HttpResponseMessage response = await client.PutAsJsonAsync($"https://api.safetyculture.io/audits/{auditResult.audit_id}", value);
-		response.EnsureSuccessStatusCode();
 
-		//Deserialize the updated product from the response body.
-		//Use the following code to fetch the return response with updated audit data from server - Include Task<AuditData> as return type
-		auditResult = await response.Content.ReadAsAsync<AuditData>();
-		return auditResult;		
+*/		
+//		HttpResponseMessage response = await client.PutAsJsonAsync($"https://api.safetyculture.io/audits/{auditResult.audit_id}", value);
+//		response.EnsureSuccessStatusCode();
+//
+//		//Deserialize the updated product from the response body.
+//		//Use the following code to fetch the return response with updated audit data from server - Include Task<AuditData> as return type
+//		auditResult = await response.Content.ReadAsAsync<AuditData>();
+//		return auditResult;		
 	}
 	async Task<Object> addUser()
 	{
@@ -363,29 +439,30 @@ public class Item
 {
 	public string item_id { get; set; }
 	public string label { get; set; }
-	public string type { get; set; }	
-	public Responses responses { get; set; }
+	public string type { get; set; }
+	public Responses responses { get; set;}
+	//public Responses responses { get {return this.responses;} set{ if (value != this.responses) { this.responses = null; } this.responses = value; } }
 }
 
 public class Responses
 {
-	//public object datetime { get; set; }
-	public string text { get; set; }
+	//public DateTime datetime { get; set; }
+	public string text {get; set;}
 }
 
 public class Responses2
 {
-	public string text { get; set; }
+	public string text { get; private set; }
 	//public DateTime datetime { get; set; }
 }
 
 public class excelPreAuditData
 {
-	public string functionLocation { get; set; }
-	public string auditNumber { get; set; }
-	public string stationName { get; set; }
+	public string functionLocation { get;}
+	public string auditNumber { get;}
+	public string stationName { get;}
 	public string address { get; set; }
-	public string autoSaveLocation { get; set; }
+	public string autoSaveLocation { get;}
 
 	public excelPreAuditData(string _functionLocation, string _auditNumber, string _stationName, string _address, string _autoSaveLocation)
 	{
@@ -395,4 +472,21 @@ public class excelPreAuditData
 		address = _address;
 		autoSaveLocation = _autoSaveLocation;
 	}
+
 }
+
+public class StartAuditFeedItems
+{
+	public string item_id { get; set; }
+	public string label { get; set; }
+	public string type { get; set; }
+	public Responses1 responses { get; set; }
+	//public Responses responses { get {return this.responses;} set{ if (value != this.responses) { this.responses = null; } this.responses = value; } }
+}
+
+public class Responses1
+{
+	//public DateTime datetime { get; set; }
+	public string text { get; set; }
+}
+
