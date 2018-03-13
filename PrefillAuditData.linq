@@ -51,23 +51,19 @@ class Program
 		//result.Dump();
 //		var apipath = P.getAllAuditIdApiPath(result.Result).ToArray();
 		//apipath.Dump();
+//		var users = P.getListOfUsers();
+//		users.Dump();
 		var prefillData = P.preFillAuditData();	
 //		prefillData.Dump();
-		int auditCount = 0;
-		for (auditCount= 0; auditCount < 1; auditCount++)
+		int auditCount = 5;
+		for (auditCount= 5; auditCount < 6; auditCount++)
 		{
-			var startAuditData = P.StartAudit(prefillData, auditCount);
-			
+			var startAuditData = P.StartAudit(prefillData, auditCount);			
 //			var auditResult = P.getEachAuditResult(apipath[auditCount]).Result;
-//			auditResult.Dump();
+//			auditResult.Dump();			
 			
-			
-			//var modifiedAuditData = P.modifyAudit(auditResult, prefillData, auditCount);
-//			string modifiedAuditDataJSON = JsonConvert.SerializeObject(modifiedAuditData,
-//   			Newtonsoft.Json.Formatting.Indented,
-//   			new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-   			//modifiedAuditDataJSON.Dump();			
 		}			
+		//P.StartAudit(prefillData, auditCount);	
 	}
 
 	static void Authentication()
@@ -80,36 +76,44 @@ class Program
 	}
 
 	async Task<string> StartAudit(List<excelPreAuditData> preFillAuditData,int auditCount)
+	//public void StartAudit(List<excelPreAuditData> preFillAuditData,int auditCount)
 	{
 		Authentication();	
 		excelPreAuditData[] dataArray = preFillAuditData.ToArray();
-
+//		var headerauditFeeds = new List<StartAuditFeedItems>
+//		{
+//			new StartAuditFeedItems {item_id = "f3245d39-ea77-11e1-aff1-0800200c9a66",
+//									label = "Title Page",
+//									type = "textsingle",
+//									responses = new Responses1{text =dataArray[auditCount].functionLocation.ToString()}}			}
+//		}
+		
 		var auditFeeds = new List<StartAuditFeedItems>
 		{
-			new StartAuditFeedItems{item_id = "f3265c45-a89d-4703-88fc-1e01fdac89d4",
+			new StartAuditFeedItems{item_id = "fb41b026-72b3-43c2-9202-0a51a838d5e0",
 									label = "Site Functional Location",
 									type = "textsingle",
 									responses = new Responses1{text =dataArray[auditCount].functionLocation.ToString()}},
 									
-			new StartAuditFeedItems{item_id = "01638c1e-68e4-4bc2-a9df-ecbd472e49a6",
-									label = "Site Audit Number",
-									type = "textsingle",
-									responses = new Responses1{text = dataArray[auditCount].auditNumber.ToString()}},
+//			new StartAuditFeedItems{item_id = "01638c1e-68e4-4bc2-a9df-ecbd472e49a6",
+//									label = "Site Audit Number",
+//									type = "textsingle",
+//									responses = new Responses1{text = dataArray[auditCount].auditNumber.ToString()}},
 									
-			new StartAuditFeedItems{item_id = "c28d7372-8305-435d-9571-d09e5cdfad77",
+			new StartAuditFeedItems{item_id = "641cb666-cf76-452d-b9a4-7588c8489e7e",
 									label = "Site Description",
 									type = "textsingle",
 									responses = new Responses1{text =dataArray[auditCount].stationName.ToString()}},
 									
-			new StartAuditFeedItems{item_id = "ae244730-779e-4d30-b5c1-802296b2d9eb",
+			new StartAuditFeedItems{item_id = "9d26c1a6-4736-4ce8-bc4a-776ab173b8d5",
 									label = "Address",
 									type = "text",
-									responses = new Responses1{text =dataArray[auditCount].address.ToString()}},
+									responses = new Responses1{text =dataArray[auditCount].address.ToString()}}
 									
-			new StartAuditFeedItems{item_id = "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3",
-									label = "AutoSave Site Name",
-									type = "textsingle",
-									responses = new Responses1{text =dataArray[auditCount].autoSaveLocation.ToString()}}
+//			new StartAuditFeedItems{item_id = "16a3ad4d-61e1-4ba5-9d13-62182d1c2ed3",
+//									label = "AutoSave Site Name",
+//									type = "textsingle",
+//									responses = new Responses1{text =dataArray[auditCount].autoSaveLocation.ToString()}}
 		};
 
 		JObject rss =
@@ -119,7 +123,7 @@ class Program
 						new JProperty("template_id", "template_e1a05cecebfb461183a21b57d9685203"),
 						//new JProperty("audit_id", "http://james.newtonking.com"),
 						//new JProperty("description", "James Newton-King's blog."),
-						new JProperty("items",
+						new JProperty("header_items",
 							new JArray(
 								from p in auditFeeds
 								orderby p.item_id
@@ -138,7 +142,7 @@ class Program
 		var content = new FormUrlEncodedContent(values);		
 		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits", JsonConvert.SerializeObject(values));*/
 
-		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits",JsonConvert.SerializeObject(rss));
+		var response = await client.PostAsJsonAsync("https://api.safetyculture.io/audits", JsonConvert.SerializeObject(rss));
 		response.Dump();
 		response.EnsureSuccessStatusCode();
 		return response.Headers.Location.ToString();
@@ -186,7 +190,7 @@ class Program
 		//{
 		var response = await client.GetAsync(auditApiPath);
 		var result = await response.Content.ReadAsStringAsync();
-		//result.Dump();
+		result.Dump();
 		var auditData = JsonConvert.DeserializeObject<AuditData>(result);
 //		var settings = new JsonSerializerSettings
 //		{
@@ -206,7 +210,7 @@ class Program
 
 	public List<excelPreAuditData> preFillAuditData()
 	{
-		string filePath = @"C:\Dev\iAuditorIntegration\PM-#13374002-v6B-WORM_Site_Audit_Sheet.XLSM";
+		string filePath = @"C:\Dev\integration\PM-#13374002-v6B-WORM_Site_Audit_Sheet.XLSM";
 		FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read);
 
 		//Reading from a OpenXml Excel file (2007 format; *.xlsx)
@@ -255,12 +259,12 @@ class Program
 					listItems.Add(item);
 				}
 
-				else if (item.label == "Site Audit Number")
-				{
-					item.responses.text = dataArray[auditCount].auditNumber.ToString();
-					//var changedItem = auditResult.items.Where(i => i.label == "Site Audit Number").ToList();
-					listItems.Add(item);
-				}
+//				else if (item.label == "Site Audit Number")
+//				{
+//					item.responses.text = dataArray[auditCount].auditNumber.ToString();
+//					//var changedItem = auditResult.items.Where(i => i.label == "Site Audit Number").ToList();
+//					listItems.Add(item);
+//				}
 
 				else if (item.label == "Site Description")
 				{
@@ -276,12 +280,12 @@ class Program
 					listItems.Add(item);
 				}
 
-				else if (item.label == "AutoSave Site Name")
-				{
-					item.responses.text = dataArray[auditCount].autoSaveLocation.ToString();
-					//var changedItem = auditResult.items.Where(i => i.label == "AutoSave Site Name").ToList();
-					listItems.Add(item);
-				}
+//				else if (item.label == "AutoSave Site Name")
+//				{
+//					item.responses.text = dataArray[auditCount].autoSaveLocation.ToString();
+//					//var changedItem = auditResult.items.Where(i => i.label == "AutoSave Site Name").ToList();
+//					listItems.Add(item);
+//				}
 
 				var value = new Dictionary<string, List<Item>> {
   				{"items", listItems}};
@@ -489,4 +493,3 @@ public class Responses1
 	//public DateTime datetime { get; set; }
 	public string text { get; set; }
 }
-
