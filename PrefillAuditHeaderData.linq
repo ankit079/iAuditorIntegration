@@ -48,7 +48,8 @@ class Program
 		//		Authentication();		
 		//To get all auditIds
 		//var result = P.getAllAuditIds();
-		P.shareAudit();
+		var data = P.shareAudit();
+		data.Dump();
 
 		//		var apipath = P.getAllAuditIdApiPath(result.Result).ToArray();
 		//apipath.Dump();
@@ -168,8 +169,9 @@ class Program
 		return result.audits.Where(x => x.modified_at.Day == DateTime.Today.Day).ToList();
 	}
 
-	async void shareAudit()
+	async Task<Object> shareAudit()
 	{
+		var data = new List<Object>();
 		Authentication();
 		var auditIds = getAllAuditIds().Result;
 		var userDetails = getListOfUsers().Result;
@@ -206,6 +208,7 @@ class Program
 				shareAuditPath.Dump();
 				var response = await client.PostAsJsonAsync(shareAuditPath, JsonConvert.SerializeObject(rss));
 				response.EnsureSuccessStatusCode();
+				data.Add(response);
 				//response.Dump();				
 			}
 		}
@@ -214,6 +217,7 @@ class Program
 
 			throw;
 		}
+		return data;
 	}
 
 	public List<string> getAllAuditIdApiPath(Result getAllAuditIds)
